@@ -85,16 +85,7 @@ WSGI_APPLICATION = 'lembrete.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'django_mysql',
-#        'USER': 'Gustavo12386',
-#        'PASSWORD': '30gustavo10',
-#        'HOST': 'localhost',
-#        'PORT': '3306',
-#    }
-#}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
