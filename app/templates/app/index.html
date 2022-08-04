@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %} Meu Lembrete {%endblock%}
+{% block content %}
+<div class="container dashboard"> 
+  <div class="col-4 dashboard-box" id="dashboard-done">
+    <h4>Tarefas finalizadas</h4>
+    <span>{{tasksDone}}</span>
+</div>
+<div class="col-4 dashboard-box" id="dashboard-doing">
+    <h4>Tarefas Pendentes</h4>
+    <span>{{tasksDoing}}</span>
+</div>
+</div>
+<div class="offset-1 col-10 list-div">   
+    <h1 class="mt-5">Meus lembretes</h1>
+    <a id="add-link" href="addlembrete/">
+      <button type="submit" class="btn btn-primary" >Adicionar lembrete</button>
+    </a>
+      <ul class="task-list">  
+         {% for task in tasks%} 
+         {% if task.done == 'doing' %}
+         <li class="task-item">
+         {% else %}
+         <li class="task-item done">
+          {% endif %} 
+            <span class="span"><a href="informacoes/{{task.id}}">{{task.titulo}}</a></span>
+            <a href="deletarlembrete/{{task.id}}" class="delete-btn"><span><i class="fas fa-trash"></i></span></a>            
+            <a href="editarlembrete/{{task.id}}"><span><i class="fas fa-edit"></i></span></a>
+            <a href="changestatus/{{task.id}}"><i class="fas fa-check"></i></a>
+         </li>
+         {% endfor %}
+      </ul>
+  </div>
+  <nav aria-label="Page navigator example">
+    <ul class="pagination">
+      {% for pagina in tasks.paginator.page_range %}
+        {% if tasks.number == pagina %}
+         <li class="page-item active">
+          <a class="page-link" href="?p={{ pagina }}&termo={{request.GET.termo}}">{{pagina}}</a>
+        </li>
+        {% else %}
+        <li class="page-item">
+          <a class="page-link" href="?p={{ pagina }}">{{pagina}}</a>
+        </li>
+        {% endif %}
+     {% endfor %}  
+    </ul>
+  </nav>
+{% endblock %}

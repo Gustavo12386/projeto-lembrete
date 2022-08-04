@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Adicione um novo lembrete {%endblock%}
+{% block content%}
+<div class="offset-1 col-10 list-div">
+    <h1 class="mt-5">Adicione a sua nova tarefa</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p}}
+      <input type="submit" class="btn btn-success" value="Adicionar lembrete">
+    </form>
+</div>
+{%endblock%}
