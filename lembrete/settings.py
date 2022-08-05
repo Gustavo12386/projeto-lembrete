@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
 from django.contrib.messages import constants
 
 MESSAGE_TAGS = {
@@ -35,7 +34,7 @@ SECRET_KEY = 'django-insecure-5f=$eb_n02fofizv&0f!@x(!^kpfdu1umnd($mdl(6hhv-*g9(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://meulembrete.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -144,4 +143,4 @@ LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = '/accounts/login'
 LOGIN_URL = 'login'
 
-django_heroku.settings(locals())
+
