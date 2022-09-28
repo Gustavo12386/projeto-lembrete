@@ -11,7 +11,7 @@ HTML5, CSS3, Js(jquery), python, bootstrap, django e sqlite3
 
 ## Como executar o projeto
 
-Pré-requisitos: Python 3.10.5
+Pré-requisitos: Python 3.10.4
 
 #clonar repositório
 
