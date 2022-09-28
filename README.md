@@ -31,7 +31,11 @@ python manage.py runserver
 ![print 3](https://user-images.githubusercontent.com/81700849/185814399-d4c227b7-4049-405a-bc6f-2398c07b1b62.PNG)
 ![print 4](https://user-images.githubusercontent.com/81700849/185814422-f93534dc-de24-43ca-aaba-363703d2bcb0.PNG)
 
+# Autor
 
+Gustavo Viana Calderaro Nogueira
+
+https://www.linkedin.com/in/gustavo-viana-95206520a/
 
 
 
