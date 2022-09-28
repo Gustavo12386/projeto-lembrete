@@ -19,7 +19,7 @@ git clone https://github.com/Gustavo12386/projeto-lembrete.git
 
 #entrar na pasta do projeto 
 
-cd Projeto_Agenda
+cd meulembrete
 
 #executar o projeto
 
