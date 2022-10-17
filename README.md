@@ -7,11 +7,11 @@ A aplicação consiste em um usuário registrar um perfil, onde ele vai adiciona
 
 
 ## Tecnologias utilizadas
-HTML5, CSS3, Js(jquery), python, bootstrap, django e sqlite3
+- HTML5, CSS3, Js(jquery), python, bootstrap, django e sqlite3
 
 ## Como executar o projeto
 
-Pré-requisitos: Python 3.10.4
+- Pré-requisitos: Python 3.10.4
 
 #clonar repositório
 
@@ -19,11 +19,11 @@ git clone https://github.com/Gustavo12386/projeto-lembrete.git
 
 #entrar na pasta do projeto 
 
-cd meulembrete
+- cd meulembrete
 
 #executar o projeto
 
-python manage.py runserver
+- python manage.py runserver
 
 # Imagens
 ![print](https://user-images.githubusercontent.com/81700849/185814534-dfcc550c-1942-4e8d-aded-50d9e8cb00c0.PNG)
